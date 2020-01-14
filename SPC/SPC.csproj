@@ -56,7 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Editor\Export.cs" />
-    <Compile Include="Interfaces\Comp_Interface.cs" />
+    <Compile Include="Interfaces\IComp.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Start_Menu\Load_Project.cs" />
     <Compile Include="Start_Menu\New_Project.cs" />

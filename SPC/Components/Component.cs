@@ -22,14 +22,28 @@ namespace SPC.Components
             this.name = name;
         }
 
+        public String getName()
+        {
+            return name;
+        }
         public void setBeschreibung(String beschreibung)
         {
             this.beschreibung = beschreibung;
         }
 
+        public String getBeschreibung()
+        {
+            return beschreibung;
+        }
+
         public void setSymbol(String symbol)
         {
             this.symbol = symbol;
+        }
+
+        public String getSymbol()
+        {
+            return symbol;
         }
     }
 }

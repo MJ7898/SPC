@@ -3,47 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Controls;
 
 namespace SPC.Components
 {
    public abstract class Component
     {
-        private string name;
-        private string beschreibung;
-        private string symbol;
+        private string componentName;
+        private string componentDescription;
+        private Image componentImage;
 
         public Component()
         {
 
         }
 
-        public void setName(String name)
+        public void setComponentName(String componentName)
         {
-            this.name = name;
+            this.componentName = componentName;
         }
 
-        public String getName()
+        public String getComponentName()
         {
-            return name;
+            return componentName;
         }
-        public void setBeschreibung(String beschreibung)
+        public void setComponentDescription(String componentDescription)
         {
-            this.beschreibung = beschreibung;
-        }
-
-        public String getBeschreibung()
-        {
-            return beschreibung;
+            this.componentDescription = componentDescription;
         }
 
-        public void setSymbol(String symbol)
+        public String getComponentDescription()
         {
-            this.symbol = symbol;
+            return componentDescription;
         }
 
-        public String getSymbol()
+        public void setComponentImage(Image componentImage)
         {
-            return symbol;
+            this.componentImage = componentImage;
+        }
+
+        public Image getComponentImage()
+        {
+            return componentImage;
         }
     }
 }

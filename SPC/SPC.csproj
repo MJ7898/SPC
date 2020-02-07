@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Components\Steckdose.cs" />
     <Compile Include="Editor\Export.cs" />
     <Compile Include="Interfaces\IComp.cs" />
     <Compile Include="Settings.cs" />

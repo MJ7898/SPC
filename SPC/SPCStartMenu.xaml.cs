@@ -30,8 +30,8 @@ namespace SPC
         private void NewProjectbutton_MouseDown(object sender, MouseButtonEventArgs e)
         {
             // Hier muss der Projektname der vom User ausgewählt wurde eingesetzt werden. 
-            ProjektNameEingabe pne1 = new ProjektNameEingabe();
-            NavigationService.Navigate(pne1);
+            ProjektNameEingabe projektNameEingabe = new ProjektNameEingabe();
+            NavigationService.Navigate(projektNameEingabe);
            
         }
 

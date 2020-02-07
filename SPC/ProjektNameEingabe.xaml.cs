@@ -27,9 +27,9 @@ namespace SPC
 
         private void WeiterButton_Click(object sender, RoutedEventArgs e)
         {
-            String projektname;
-            projektname = projektNameTextFeld.Text;
-            new New_Project(projektname);
+            String projectName;
+            projectName = projektNameTextFeld.Text;
+            new New_Project(projectName);
 
             SPCEditor e1 = new SPCEditor();
             NavigationService.Navigate(e1);   
@@ -38,8 +38,8 @@ namespace SPC
 
         private void ZurückButton_Click(object sender, RoutedEventArgs e)
         {
-            SPC.SPCStartMenu ssm1 = new SPCStartMenu();
-            NavigationService.Navigate(ssm1);
+            SPC.SPCStartMenu startMenu = new SPCStartMenu();
+            NavigationService.Navigate(startMenu);
         }
     }
 }

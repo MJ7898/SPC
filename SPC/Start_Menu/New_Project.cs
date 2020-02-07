@@ -9,29 +9,29 @@ namespace SPC.Start_Menu
 {
     class New_Project
     {
-        private String name;
-        public New_Project(String name)
+        private String projectName;
+        public New_Project(String projectName)
         {
-            this.name = name;
+            this.projectName = projectName;
             createNewProject();
         }
 
         //Methode mit der das neue Projekt angelegt wird. Überprüft zunächst ob der Ordner zum Speichern vorhanden ist. Ansonsten wird ein neuer erstellt. 
         public void createNewProject()
         {
-            if (checkDirectory() == true)
+            if (checkProjectDirectory() == true)
             {
-                createFile();
+                createProjectFile();
             }
             else
             {
-                createDirectory();
-                createFile();
+                createProjectDirectory();
+                createProjectFile();
             }
         }
 
         //Methode die Überprüft ob der Ordner, in welchem die Dateien gespeichert werden, vorhanden ist
-        public Boolean checkDirectory()
+        public Boolean checkProjectDirectory()
         {
             if (Directory.Exists("Saving"))
             {
@@ -44,16 +44,16 @@ namespace SPC.Start_Menu
         }
 
         //Erstellt den neuen Ordner zum Speichern der Datei
-        public void createDirectory()
+        public void createProjectDirectory()
         {
             Directory.CreateDirectory("Savings");
            
         }
         
         //Erstellt eine Datei im Format txt mit dem übergebenem Projektnamen. 
-        public void createFile()
+        public void createProjectFile()
         {
-            String path = "savings/" + name + ".txt";
+            String path = "savings/" + projectName + ".txt";
             using (FileStream fs = File.Create(path))
             {
               

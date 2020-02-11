@@ -1,0 +1,7 @@
+organization=simonleitl-github
+projectKey=SimonLeitl_SPC
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.4497
+dashboardUrl=https://sonarcloud.io/dashboard?id=SimonLeitl_SPC
+ceTaskId=AXAuRGSXXlUidfsF2_rN
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXAuRGSXXlUidfsF2_rN
